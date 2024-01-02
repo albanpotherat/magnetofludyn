@@ -1,0 +1,149 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+
+Name       : Swanky
+Description: A three-column, fixed-width design suitable for news sites and blogs.
+Version    : 1.0
+Released   : 20080227
+
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Swanky by Free CSS Templates</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+</head>
+<body>
+<!-- start header -->
+<div id="header">
+	<div id="menu">
+		<ul>
+			<li class="current_page_item"><a href="#">Home</a></li>
+			<li><a href="research.html">Research</a></li>
+			<li><a href="collaborators.html">People</a></li>
+			<li><a href="publications.html">Publications</a></li>
+			<li><a href="flowcube.html">FLOWCUBE</a></li>
+			<li><a href="lee.html">LEE</a></li>
+			<li class="last"><a href="#">Contact</a></li>
+		</ul>
+	</div>
+</div>
+<div id="logo">
+	<h1><a href="#">Alban Poth&#233;rat</a></h1>
+	<h2> Professor of Fluid Mechanics</h2>
+	<h2> Royal Society Wolfson Research Merit Award Holder</h2>
+</div>
+<!-- end header -->
+<hr />
+<!-- start page -->
+<div id="page">
+	<!-- start content -->
+	<div id="content">
+		<div class="post">
+			
+			<div class="entry">
+				<p>
+				I am a scientist working in the field of fluid mechanics. I am currently a member of the <a href=""http://www.complexity-coventry.org/>Applied Mathematics 
+				Research Centre</a>, at Coventry University (UK), where I work within the Fluid Dynamics group.  My research concerns 
+				turbulent flows and flows under the influence of magnetic fields and background rotation. 
+				Turbulent flows are highly erratic and difficult to predict. Since in natural and industrial processes, flows are more often 
+				turbulent than not, they pose both a major hurdle and a fascinating challenge to whomever needs to understand or 
+				optimize these processes. Examples include predicting the weather, optimizing heat exchangers, wind turbines etc...
+				Magnetic fields and background rotation (those of a planet, for example) have in common an ability to spectacularly 
+				change the way in which turbulence transports heat or chemicals, but also its ability to dissipate energy. This typically 
+				happens in the blanket that extracts heat from future nuclear fusion reactors, in the Earth liquid core,  
+				in planetary atmospheres and oceans. Understanding or controlling these effects is therefore key to such challenges as 
+				building efficient fusion reactors, understanding how our planet sustains a magnetic field, or the dynamics of oceans, 
+				weather and climate... 
+				</p>
+			</div>
+<!--			<p class="links"><a href="#" class="comments">Comments (33)</a> &nbsp;&nbsp;&nbsp; <a href="#" class="permalink">Permalink</a></p>
+			<p class="tags"><a href="#">dolor</a> <a href="#">ipsum</a> <a href="#">lorem</a> <a href="#">sit amet</a> <a href="#">dolor</a> <a href="#">ipsum</a> <a href="#">lorem</a> <a href="#">sit amet</a></p>
+-->		</div>
+		<div class="post">
+			<h1 class="title"><a href="#">Sponsors </a></h1>
+			<p class="meta"><small>Updated on March 21, 2015 by <a href="#">AP</a></small></p>
+			<div class="entry">
+			
+<table summary="Used for layout only">
+<tbody><tr>
+<td><img src=sponsors_files/royal_society.jpg align=center height=50 vspace=5 hspace=10></td>
+<td><img src=sponsors_files/RAEng_Logo_Orange_Black.jpg align=center height=80 vspace=5 hspace=10></td>
+</tr>
+<tr>
+<th><img src=sponsors_files/leverhulme.jpg align=center height=80 vspace=5 hspace=10></th>
+</tr>
+<tr>
+<td><img src=sponsors_files/dfg_logo.gif align=center height=30 vspace=5 hspace=10></td>
+
+<td><img src=sponsors_files/CNRSfr.jpg align=center height=80 vspace=5 hspace=10></td>
+</tr>
+</tbody>
+</table>			
+			</div>
+<!--			<p class="links"><a href="#" class="comments">Comments (33)</a> &nbsp;&nbsp;&nbsp; <a href="#" class="permalink">Permalink</a></p>
+			<p class="tags"><strong>Tags:</strong> <a href="#">dolor</a> <a href="#">ipsum</a> <a href="#">lorem</a> <a href="#">sit amet</a> <a href="#">dolor</a> <a href="#">ipsum</a> <a href="#">lorem</a> <a href="#">sit amet</a></p>
+-->	</div>
+	</div>
+	<!-- end content -->
+	<!-- start sidebar one -->
+	<div id="sidebar1" class="sidebar">
+		<ul>
+			<li id="recent-posts">
+				<h2>Latest News</h2>
+				<ul>
+				  <li>
+	<!--					<h3><a href="#">April 15, 2015</a> New PhD student</h3>
+						<p>Jon Brons starts a PhD in experimental fluid mechanics on the dimensionality of turbulence under the effect of background rotation. 
+						He will be supervised by Profs. Peter Thomas (University of Warwick) and Alban Poth&#233;rat. His work will be conducted on 
+						Warwick University's large rotating table to eludicate how rotating turbulence switches between two- and three-dimensional 
+						states.</p>
+				  </li>
+				  <li>
+						<h3><a href="#">April 1, 2015</a> LEE runs in high magnetic field for the first time</h3>
+						<p>the Little Earth Experiment (LEE) was operated for the first time in a high magnetic field at CNRS Grenoble. 
+						During the coming year, LEE will explore the details of magnetoconvective patterns taking place in the 
+						core of the Earth, to understand how they determine how the magnetic field our planet behaves.</p>
+					</li>
+	-->				<li>
+						<h3><a href="#">February 9, 2015</a> New PhD student</h3>
+						<p> Anthony Rouquier starts a PhD in theoretical/numerical fluid mechanics on the transition to turbulence 
+						in particulate pipe flows, supervised by Chris Pringle and Alban Poth&#233;rat. His work will be sponsored 
+						for 4 years by the National Engineering Laboratory.</p>
+				  </li>					
+					
+					<li>
+						<h3><a href="#">November 24, 2014</a> Prestigious Royal Society award </h3>
+						<p>I am awarded the Wolson Research Merit Award by the Royal Society. Jointly funded by the Wolfson Foundation and the Department for Business, Innovation and Skills (BIS), the scheme aims to provide universities with additional support to enable them to attract science talent from overseas and retain respected UK scientists of outstanding achievement and potential.   </p>
+					</li>
+					<li>
+						<h3><a href="#">November 11, 2014</a> Latest Journal article</h3>
+						<p>"Why, how and when MHD turbulence at low Rm becomes three-dimensional" by A. Potherat and R. Klein accepted for publication in the Journal of Fluid Mechanics </p>
+					</li>
+				
+				</ul>
+				<h3>Previous news</h3>
+			</li>
+			<li></li>
+		</ul>
+	</div>
+	<!-- end sidebar one -->
+	<!-- start sidebar two -->
+	<!-- end sidebar two -->
+	<div style="clear: both;">&nbsp;</div>
+</div>
+<!-- end page -->
+<hr />
+<!-- start footer -->
+<div id="footer">
+	<p>&copy; 2007 All Rights Reserved &nbsp;&bull;&nbsp; Designed by <a href="http://www.freecsstemplates.org/">Free CSS Templates</a></p>
+</div>
+<!-- end footer -->
+<div align=center>This template  downloaded form <a href='http://all-free-download.com/free-website-templates/'>free website templates</a></div></body>
+</html>
