@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!-- PHP: Put the name of the main menu button for this page here -->
+
+
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="Robots" content="index, follow" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SheardLab.com | Home</title>
+  <link rel="shortcut icon" type="image/x-icon" href="./images/favicon.ico" />
+  <link href="./css/sheardlab.css" type="text/css" rel="stylesheet" media="all" />
+  <link rel="canonical" href="http://sheardlab.com/" />
+  <link href="http://fonts.googleapis.com/css?family=Lato:100,300,400,700,300italic,400italic,700italic|Lustria" rel="stylesheet" type="text/css" />
+  <script type="text/javascript" src="./scripts/jquery-1.11.1.min.js"></script>
+      <script type="text/javascript" src="./scripts/fadeSlideShow.js"></script>
+    <script type="text/javascript">
+    jQuery(document).ready(function($){
+            	jQuery('#slideshow').fadeSlideShow();
+          	/* toggle collapsed main menu */
+    	$('#mobile-menu').on('click', function(){
+    		$('#global-nav').slideToggle();
+    		$(this).toggleClass('active');
+    	});
+    	/* toggle collapsed research menu */
+    	$('#mobile-menu-research').on('click', function(){
+    		$('#research-nav').slideToggle();
+    		$(this).toggleClass('active');
+    	});
+    	/* toggle collapsed publications menu */
+    	$('#mobile-menu-pubs').on('click', function(){
+    		$('#pubs-jumpnav').slideToggle();
+    		$(this).toggleClass('active');
+    	});
+    });
+  </script>
+
+</head>
