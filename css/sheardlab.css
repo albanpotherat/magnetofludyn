@@ -1,0 +1,606 @@
+/* ----- SheardLab.com CSS styles ----- */
+
+/* ----- Set HTML/body styles ----- */
+  
+  body {  
+    overflow-y: scroll; 
+    background: #fff;
+  }
+
+  html {
+    font-family: sans-serif;
+    font-size: 62.5%;
+    height: 100%;
+    -webkit-text-size-adjust:100%; 
+  }
+  body {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; 
+    font-size:14px;
+    line-height:1.42857143;
+    color: #444; 
+  }
+
+/* ----- Reset styles ----- */
+
+  * { margin: 0; padding: 0; }
+  ul, li { list-style: none; }
+  img { border: none; display: block; }
+  a { text-decoration: none; transition: color 0.2s ease-out;}
+  a, input { outline: none; }
+  .clear { clear: both; }
+  a:active, 
+  a:focus { border: 0; outline: 0; }
+  table { border: 0; border-collapse: collapse; }
+
+/* ----- HTML5 elements ----- */
+
+  article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary{ display: block; }
+
+
+/* ----- Anchor styles ----- */
+
+  a { text-decoration: none; }
+  a:link    { color: #2574EA; }
+  a:visited { color: #2574EA; }
+  a:hover   { 
+    -webkit-animation: pulsate 2s ease 0 infinite alternate;
+    -moz-animation: pulsate 2s ease 0 infinite alternate;
+    animation: pulsate 2s ease 0 infinite alternate;
+  }
+  @-webkit-keyframes pulsate {
+    from { color: #318DED; }
+    to   { color: #000; }
+  }
+  @-moz-keyframes pulsate {
+    from { color: #318DED; }
+    to   { color: #000; }
+  }
+  @keyframes pulsate {
+    from { color: #318DED; }
+    to   { color: #000; }
+  }
+  a:active  { color: #318DED; }
+
+
+
+/* ----- Heading styles ----- */
+
+  h1, h2, h3, h4, h5, h6 { font-weight: 300; line-height: 1.1; font-family: Lato,Helvetica,Arial,sans-serif; color: #444; }
+  /* Don't use relative sizing on margin/padding here so that side-by-side headings line up okay */
+  h1 { font-size: 34px/34px; font-weight: 400; }
+  h2 { font-size: 30px; border-bottom:1px solid rgba(37,116,234,0.5); margin:20px 0 20px; padding-bottom:1px; }
+  h2 span {border-bottom:2px solid #2574EA; }
+  h3 { font-size: 24px; margin:0.25% 0; }
+  h4 { font-size: 20px; margin:0.125% 0; }
+  h5 { font-size: 16px; margin:0.05% 0; }
+  h6 { font-size: 14px; }
+  @media screen and (max-width:800px) { 
+    h2 { font-size: 26px; border-bottom:1px solid rgba(37,116,234,0.5); margin:15px 0 15px; padding-bottom:1px; }
+    h2 span {border-bottom:2px solid #2574EA; }
+    h3 { font-size: 22px; margin:0.25% 0; }
+    h4 { font-size: 18px; margin:0.125% 0; }
+    h5 { font-size: 15px; margin:0.05% 0; }
+    h6 { font-size: 14px; }
+  }
+  @media screen and (max-width:400px) { 
+    h2 { font-size: 22px; border-bottom:1px solid rgba(37,116,234,0.5); margin:10px 0 10px; padding-bottom:1px; }
+    h2 span {border-bottom:2px solid #2574EA; }
+    h3 { font-size: 18px; margin:0.25% 0; }
+    h4 { font-size: 16px; margin:0.125% 0; }
+    h5 { font-size: 14px; margin:0.05% 0; }
+    h6 { font-size: 14px; }
+  }
+  @media screen and (max-device-width:1000px) {
+    h2 { 
+      position:relative; border:none; padding:0.5em 0 0; display:block; overflow:hidden; margin:0; 
+    }
+    h2 span { 
+      position:relative; font-size:80%; border:none; margin:0; padding:0.2em 10% 0.2em 2%; color:#eee; font-weight:400; 
+      display:inline-block; overflow:auto;
+      background: -webkit-linear-gradient(340deg, rgba(37,116,234,1), rgba(37,116,234,1) 90%, transparent 90%, transparent); /* light blue --> For Safari 5.1 to 6.0 */
+      background: -o-linear-gradient(110deg, rgba(37,116,234,1), rgba(37,116,234,1) 90%, transparent 90%, transparent); /* light blue --> For Opera 11.1 to 12.0 */
+      background: -moz-linear-gradient(110deg, rgba(37,116,234,1), rgba(37,116,234,1) 90%, transparent 90%, transparent); /* light blue --> For Firefox 3.6 to 15 */
+      background: linear-gradient(110deg, rgba(37,116,234,1), rgba(37,116,234,1) 90%, transparent 90%, transparent); /* light blue --> Standard syntax */
+    }
+    h2 span a:link { color: #eee; }
+    h2 span a:visited { color: #eee; }
+    h2 span a:hover { color: #fff; }
+    h2 span a:active { color: #fff; }
+  }  
+  @media screen and (max-width:1000px) {
+    h2 span {padding-left:1%; }
+  }  
+
+
+/* ----- Layout styles ----- */
+
+  .content-centered { display:block; width: 100%; margin: 0; }
+  @media screen and (max-width:1000px) { 
+    .page-section { padding:0; overflow:auto; width:100%; }
+  }
+  @media screen and (min-width:1001px) { 
+    .page-section { padding:0 2%; overflow:auto; width:96%; }
+  }
+  .outerwidth {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .side-by-side {width:50%; float:left;
+  }
+  .side-by-side-wide {width:62%; float:left;
+  }
+  .side-by-side-narrow {width:38%; float:left;
+  }
+  .side-by-side-container {overflow:auto;
+  }
+  @media screen and (max-width:1000px) { 
+    .side-by-side {width:100%; float:left;
+    }
+    .side-by-side-wide {width:100%; float:left;
+    }
+    .side-by-side-narrow {width:100%; float:left;
+    }
+  }
+
+
+/* ----- Header styles ----- */
+  
+  #header { }
+  #header-section {
+    padding:0; overflow:auto; border-bottom:1px solid #aaa;
+  }
+  
+  #brand { float: left; margin:5px 0 0 10px; }
+  
+  #global-nav { float: right; margin: 0; }
+  #global-nav ul { margin: 0 20px 0 0; }
+  #global-nav ul li { display: inline-block; float: left; margin:0; }
+  #global-nav ul li a { 
+    display:block; padding:18px 10px; cursor: pointer; font: 14px/16px Arial, Helvetica, "Helvetica Neue", sans-serif; color:#444;
+  }
+  #global-nav ul li a:hover { 
+    background: #eee; color:#000; 
+  }
+  #global-nav ul li span { 
+    display:block; padding:18px 10px; font: 14px/16px Arial, Helvetica, "Helvetica Neue", sans-serif; color:#fff;
+    background: #2574EA;
+  }
+  #mobile-menu {
+    display: none;
+    visibility: hidden;
+  }
+  @media screen and (max-width:700px) { 
+    #global-nav { float:none; overflow:auto; width:100%; }
+    #global-nav ul { margin:0; }
+    #global-nav ul li { display:block; float:none; }
+    #global-nav ul li a { 
+      display:block; padding:18px 10px;
+    }
+    #global-nav ul li a:hover { 
+      background: #eee; color:#000; 
+    }
+    #global-nav ul li span { 
+      display:block; padding:18px 10px; font: 14px/16px Arial, Helvetica, "Helvetica Neue", sans-serif; color:#fff;
+      background: #2574EA;
+    }
+
+    #mobile-menu { 
+      background-image:url("../images/menu_icon_blue.png");
+      background-size:40px 40px;
+      background-repeat:no-repeat;
+      cursor:pointer; float:right; height:40px; width:40px; margin:0; visibility:visible; display:block; 
+    }
+    #global-nav { display: none; }
+  }
+  /* Make sure main menu re-appears when scaled up */
+  @media only screen and (min-width: 701px) {
+    #global_nav {display: block !important; }
+  }
+
+
+/* ----- Container styles ----- */
+
+  #main {overflow:auto; }
+  @media screen and (max-width:1000px) { 
+    .tile {
+      margin:0; padding:0.5% 1%; overflow:hidden; border-radius:0; background:none; border-bottom:1px solid #eee;
+    }
+  }
+  @media screen and (min-width:1001px) { 
+    .tile {
+      margin:1% 0; padding:0.5% 1%; overflow:hidden; border-radius:5px; background:#eee; border-bottom:none;
+    }
+  }
+  .tile-on-img-no-padding {
+    margin:0; 
+    background: rgba(255,255,255,0.9); /* Translucent background for text floating on slideshow */
+  }
+
+/* ----- Footer styles ----- */
+
+  #footer { font-size: 11px; color: #555; border-top:1px solid #aaa; margin-top:4%; 
+  }
+  #footer div{ margin: 1% 2% 1%; 
+  }
+  #footer a { color: #555; }
+  #footer a:hover { text-decoration: underline; }
+/*  #footer .content-centered { overflow: hidden; padding: 5px; }  */
+  .logo-monash { float: right; overflow:auto;}
+  .logo-monash img { width: 250px; height:auto; }
+  @media screen and (max-width:800px) { 
+    .logo-monash img { width: 200px; }
+  }
+  @media screen and (max-width:400px) { 
+    .logo-monash img { width: 150px; }
+  }
+
+/* HOME: Welcome banner slideshow styles */
+
+  ul#slideshow {position:relative; overflow:hidden; width:100%; height:300px; }
+  ul#slideshow li {
+    position:absolute; overflow:auto; display:block; 
+    background-position:bottom right; 
+    background-repeat:no-repeat; 
+    background-size:cover; 
+    width:100%; 
+    height:300px;
+  }
+  @media screen and (min-device-height:801px) { 
+    ul#slideshow { height:400px; }
+    ul#slideshow li { height:400px; }
+  }
+  @media screen and (max-device-height:800px) { 
+    ul#slideshow { height:300px; }
+    ul#slideshow li { height:300px; }
+  }
+  @media screen and (max-device-height:400px) { 
+    ul#slideshow { height:200px; }
+    ul#slideshow li { height:200px; }
+  }
+  ul#slideshow li div {position:absolute; left:0; bottom:0; right:0; display:block; overflow:visible; padding:0;
+  }
+  ul#slideshow li div h3 { 
+    position:relative; padding:0; display:block; overflow:hidden; margin:0; 
+    background: -webkit-linear-gradient(bottom, rgba(255,255,255,0.9), rgba(255,255,255,0.9) 20%, transparent 80%, transparent); /* light blue --> For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(top, rgba(255,255,255,0.9), rgba(255,255,255,0.9) 20%, transparent 80%, transparent); /* light blue --> For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(top, rgba(255,255,255,0.9), rgba(255,255,255,0.9) 20%, transparent 80%, transparent); /* light blue --> For Firefox 3.6 to 15 */
+    background: linear-gradient(to top, rgba(255,255,255,0.9), rgba(255,255,255,0.9) 20%, transparent 80%, transparent); /* light blue --> Standard syntax */
+  }
+  ul#slideshow li div h3 span { 
+    position:relative; padding:0.2em 10% 0.2em 1em; color:#fff; font-weight:400; display:inline-block; overflow:auto;
+    background: -webkit-linear-gradient(340deg, rgba(37,116,234,1), rgba(37,116,234,1) 90%, transparent 90%, transparent); /* light blue --> For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(110deg, rgba(37,116,234,1), rgba(37,116,234,1) 90%, transparent 90%, transparent); /* light blue --> For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(110deg, rgba(37,116,234,1), rgba(37,116,234,1) 90%, transparent 90%, transparent); /* light blue --> For Firefox 3.6 to 15 */
+    background: linear-gradient(110deg, rgba(37,116,234,1), rgba(37,116,234,1) 90%, transparent 90%, transparent); /* light blue --> Standard syntax */
+  }
+  ul#slideshow li div p { display:block; padding:0 0.5% 0.5%; margin:0; font-weight:400; text-shadow:0 0 3px #fff; background-color:rgba(255,255,255,0.9);
+  }
+
+
+
+/* HOME: 2-column news/pubs section */
+
+/*  #two-column-container {width:100%; overflow:auto; }*/
+
+  @media screen and (max-width:1000px) { 
+    #news-ul li {
+      margin:0; padding:0; overflow:hidden; border-radius:0; background:none; border-bottom:1px solid #eee; position:relative; z-index:0;
+    }
+  }
+  @media screen and (min-width:1001px) { 
+    #news-ul li {
+      margin:0 0 1%; padding:0; overflow:hidden; border-radius:5px; background:#eee; border-bottom:none; position:relative; z-index:0;
+    }
+  }
+  #news-ul li:last-child {
+    margin:0;
+  }
+  .tile-text { padding:1%; }
+
+  @media screen and (max-width:1000px) { 
+    #pubs-ul li {
+      margin:0; padding:0; overflow:hidden; border-radius:0; background:none; border-bottom:1px solid #eee;
+    }
+  }
+  @media screen and (min-width:1001px) { 
+    #pubs-ul li {
+      margin:0 0 1%; padding:0; overflow:hidden; border-radius:5px; background:#eee; border-bottom:none;
+    }
+  }
+  #pubs-ul li:last-child {
+    margin:0; 
+  }
+  #pubs-ul li div {padding: 1%; }
+
+  a.link_icon     { width: 40px; height: 40px; display: block; float: right;}
+  a.link_icon img { width: 40px; height: 40px; }
+
+  
+/* HOME: sponsor page styles ----- */
+
+  #sponsors-ul {padding:0; text-align:center; }  /* centre horizontally */
+  #sponsors-ul li {overflow:auto; display:inline-block; }
+  #sponsors-ul li img {margin: 0 auto; width:90%; height:auto; max-width:300px; }
+  #sponsors-ul li p {margin: 2% auto; text-align:center; }
+  @media screen and (min-width:801px) { 
+    #sponsors-ul li {width:33.333%; max-width:33.333%; }
+  }
+  @media screen and (max-width:800px) { 
+    #sponsors-ul li {width:50%; max-width:50%; }
+  }
+  @media screen and (max-width:500px) { 
+    #sponsors-ul li {width:100%; max-width:100%; }
+  }
+  
+/* PUBLICATIONS: stylesheet */
+
+  #searchbutton {width:22px; height:22px; }
+
+  #pubs-jumpnav {
+    padding:0; overflow:auto; 
+  }
+  #pubs-jumpnav ul { float:right; padding:0 20px; border-bottom:1px solid #aaa;}
+  #pubs-jumpnav ul li { display: inline-block; float: left; margin:0; }
+  #pubs-jumpnav ul li a { 
+    display:block; padding:18px 10px; cursor: pointer; font: 14px/16px Arial, Helvetica, "Helvetica Neue", sans-serif; color:#444;
+  }
+  #pubs-jumpnav ul li a:hover { 
+    background: #eee; color:#000; 
+  }
+  #mobile-menu-pubs {
+    display: none;
+    visibility: hidden;
+  }
+  @media screen and (max-width:700px) { 
+    #pubs-jumpnav {
+      float:none; width:100%; overflow:auto; 
+    }
+    #pubs-jumpnav ul { float:none; padding:0; }
+    #pubs-jumpnav ul li { display:block; float:none; margin:0; }
+    #pubs-jumpnav ul li a { display:block;
+    }
+
+    #mobile-menu-pubs { 
+      background-image:url("../images/menu_icon_blue.png");
+      background-size:40px 40px;
+      background-repeat:no-repeat;
+      background-position:right center;
+      cursor:pointer; float:right; height:40px; width:100%; margin:0; visibility:visible; display:block; 
+    }
+    #pubs-jumpnav { display: none; }
+  }
+  /* Make sure main menu re-appears when scaled up */
+  @media only screen and (min-width: 701px) {
+    #pubs-jumpnav {display: block !important; }
+  }
+
+
+  #pubsearchform {margin:1% 0 0; padding:1%; max-width:20em; border:2px solid #318DED; border-radius:5px; overflow:auto; color: #318DED; }
+  #pubsearchform label {padding:0 0 1%; overflow:auto; display:block; }
+  #pubsearchform select {display:block; width:100%; padding:0.25em; }
+  #pubsearchform input {
+    display:block; width:100%; padding:0.25em; 
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  #pubsearchform span input {display:inline-block; width:auto; padding:0; }
+
+
+  img.button {position:relative; top:0px; display:inline; }
+  .srchBtns {position:relative; top:4px; overflow:auto; }
+
+  /* ----- On-screen output ----- */
+  span.scrCite  {color:#f00; font-weight:bold;}
+  span.scrAuth  {color: #060; font-variant:small-caps;}   /* Author names: Green and small caps */
+  span.scrTitle {color: #600; }                           /* Paper title: Red */
+  span.scrPub   {color: #006; }                           /* Where published: Blue */
+
+  @media screen and (max-width:1000px) { 
+    ul.publist li {
+      margin:0; padding:0; overflow:hidden;
+      border-radius:0;
+      background:none;
+      border-bottom:1px solid #eee;
+    }
+  }
+  @media screen and (min-width:1001px) { 
+    ul.publist li {
+      margin:0 0 1% 0; padding:0; overflow:hidden;
+      border-radius:5px;
+      background: #eee;
+      border-bottom:none;
+    }
+  }
+  ul.publist li:last-child {
+    margin:0;
+  }
+  ul.publist li div {padding: 0.5% 1%; }
+
+  span.linkWrap {
+    display:inline-block; border:none;
+    margin:0 0 0 1em; padding:3px 0; text-indent:0;
+  }
+
+/* NEWS: styles */
+  @media screen and (max-width:1000px) { 
+    #news-feature {
+      overflow:hidden; border-radius:0; background:none; border-bottom:1px solid #eee; position:relative; z-index:0;
+    }
+  }
+  @media screen and (min-width:1001px) { 
+    #news-feature {
+      overflow:hidden; border-radius:5px; background:#eee; border-bottom:none; position:relative; z-index:0;
+    }
+  }
+  .inner_shadow {
+    position:relative;
+    float:left;
+    margin:0 10px 0 0;
+    background: -webkit-linear-gradient(left, rgba(37,116,234,0.2), transparent, rgba(49,141,237,0.1)); /* light blue --> For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, rgba(37,116,234,0.2), transparent, rgba(49,141,237,0.1)); /* light blue --> For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, rgba(37,116,234,0.2), transparent, rgba(49,141,237,0.1)); /* light blue --> For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, rgba(37,116,234,0.2), transparent, rgba(49,141,237,0.1)); /* light blue --> Standard syntax */
+  }
+  .inner_shadow img {
+    position:relative;
+    z-index:-1;
+  }
+
+/* CONTACT styles */
+  #google-maps-wrapper {
+    float:left; overflow:hidden; padding:0; width:100%;
+  }
+  @media screen and (min-device-height:801px) { 
+    #google-maps-wrapper { height:450px; }
+  }
+  @media screen and (max-device-height:800px) { 
+    #google-maps-wrapper { height:250px; }
+  }
+  @media screen and (max-device-height:400px) { 
+    #google-maps-wrapper { height:150px; }
+  }
+  #google-maps-embedded {
+    width:100%; height:100%; margin:0; border:none; padding:0; 
+  }
+  @media screen and (max-width:1000px) { 
+    #contact-div-left, #contact-div-right {
+      padding:0.5% 1%; margin:0; border:none; border-bottom:1px solid #eee; border-radius:0; 
+    }
+  }
+  @media screen and (min-width:1001px) { 
+    #contact-div-left, #contact-div-right {
+      margin-top:4%; padding:2%; border: 1px solid #eee; border-radius:5px; 
+    }
+  }
+
+/* RESEARCH styles */
+  #research-nav {
+    padding:0; overflow:auto; 
+  }
+  #research-nav ul { float:right; padding:0 20px; border-bottom:1px solid #aaa;}
+  #research-nav ul li { display: inline-block; float: left; margin:0; }
+  #research-nav ul li a { 
+    display:block; padding:18px 10px; cursor: pointer; font: 14px/16px Arial, Helvetica, "Helvetica Neue", sans-serif; color:#444;
+  }
+  #research-nav ul li a:hover { 
+    background: #eee; color:#000; 
+  }
+  #research-nav ul li span { 
+    display:block; padding:18px 10px; font: 14px/16px Arial, Helvetica, "Helvetica Neue", sans-serif; color:#fff;
+    background: #aaa;
+  }
+  #mobile-menu-research {
+    display: none;
+    visibility: hidden;
+  }
+  @media screen and (max-width:700px) { 
+    #research-nav {
+      float:none; overflow:hidden; width:100%; }
+    #research-nav ul { float:none; padding:0; }
+    #research-nav ul li { display:block; float:none; margin:0; }
+    #research-nav ul li a { 
+      display:block; 
+    }
+
+    #mobile-menu-research {
+      background-image:url("../images/menu_icon_blue.png");
+      background-size:40px 40px;
+      background-repeat:no-repeat;
+      background-position:right center;
+      cursor:pointer; float:right; height:40px; width:100%; margin:0; visibility:visible; display:block; 
+    }
+    #research-nav { display: none; }
+  }
+  /* Make sure main menu re-appears when scaled up */
+  @media only screen and (min-width: 701px) {
+    #research-nav {display: block !important; }
+  }
+
+
+  #ul-gallery {
+    width:100%; overflow:hidden; text-align:center;
+  }
+
+  @media screen and (max-width:400px) { 
+    #ul-gallery li {
+      display:inline-block; height:auto; margin:0; overflow:hidden; border-radius:0; background:none; border-bottom:1px solid #eee; position:relative; z-index:0; 
+    }
+  }
+  @media screen and (min-width:401px) { 
+    #ul-gallery li {
+      display:inline-block; height:auto; margin:2% 2% 0 0; overflow:hidden; border-radius:5px; background:#eee; border-bottom:none; position:relative; z-index:0; 
+    }
+  }
+  #ul-gallery li div {
+    margin:0; 
+  }
+  #ul-gallery li div img {
+    width:100%; height:auto; overflow:hidden; border-radius:5px; background:#eee; 
+  }
+  #ul-gallery li p {
+    padding:1%; display:block; float:left;
+  }
+  @media screen and (min-width:2001px) { 
+    #ul-gallery li { width:15%; }
+    #ul-gallery li:nth-child(n) { margin-right:2%; }
+    #ul-gallery li:nth-child(n) { margin-top:2%; }
+    #ul-gallery li:nth-child(6n+6) { margin-right:0; }
+    #ul-gallery li:nth-child(-n+6) { margin-top:0; }
+    #ul-gallery li:last-child { margin-right:0; }
+  }
+  @media screen and (min-width:1601px) and (max-width:2000px) { 
+    #ul-gallery li { width:18.4%; }
+    #ul-gallery li:nth-child(n) { margin-right:2%; }
+    #ul-gallery li:nth-child(n) { margin-top:2%; }
+    #ul-gallery li:nth-child(5n+5) { margin-right:0; }
+    #ul-gallery li:nth-child(-n+5) { margin-top:0; }
+    #ul-gallery li:last-child { margin-right:0; }
+  }
+  @media screen and (min-width:1201px) and (max-width:1600px) { 
+    #ul-gallery li { width:23.5%; }
+    #ul-gallery li:nth-child(n) { margin-right:2%; }
+    #ul-gallery li:nth-child(n) { margin-top:2%; }
+    #ul-gallery li:nth-child(4n+4) { margin-right:0; }
+    #ul-gallery li:nth-child(-n+4) { margin-top:0; }
+    #ul-gallery li:last-child { margin-right:0; }
+  }
+  @media screen and (min-width:801px) and (max-width:1200px) { 
+    #ul-gallery li { width:32%; }
+    #ul-gallery li:nth-child(n) { margin-right:2%; }
+    #ul-gallery li:nth-child(n) { margin-top:2%; }
+    #ul-gallery li:nth-child(3n+3) { margin-right:0; }
+    #ul-gallery li:nth-child(-n+3) { margin-top:0; }
+    #ul-gallery li:last-child { margin-right:0; }
+  }
+  @media screen and (min-width:401px) and (max-width:800px) { 
+    #ul-gallery li { width:49%; }
+    #ul-gallery li:nth-child(n) { margin-right:2%; }
+    #ul-gallery li:nth-child(n) { margin-top:2%; }
+    #ul-gallery li:nth-child(2n+2) { margin-right:0; }
+    #ul-gallery li:nth-child(-n+2) { margin-top:0; }
+    #ul-gallery li:last-child { margin-right:0; }
+  }
+  @media screen and (max-width:400px) { 
+    #ul-gallery li { width:100%; }
+    #ul-gallery li:nth-child(n) { margin-right:2%; }
+    #ul-gallery li:nth-child(n) { margin-top:0; }
+    #ul-gallery li:nth-child(n+1) { margin-right:0; }
+    #ul-gallery li:nth-child(-n+1) { margin-top:0; }
+    #ul-gallery li:last-child { margin-right:0; }
+  }
+
+/* PEOPLE styles */
+  @media screen and (max-width:1000px) { 
+    .people-ul li { 
+      margin:0; padding:0; overflow:hidden; border-radius:0; background:none; border-bottom:1px solid #eee; position:relative; z-index:0;
+    }
+  }
+  @media screen and (min-width:1001px) { 
+    .people-ul li { 
+      margin:0 0 1%; padding:0; overflow:hidden; border-radius:5px; background:#eee; border-bottom:none; position:relative; z-index:0;
+    }
+  }
+  .people-ul li:last-child { margin:0; }
+
